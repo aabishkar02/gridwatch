@@ -7,6 +7,10 @@
     `docker compose up --build`
 
 
+
 ### GridWatch Structure:
 
 ![GridWatch Architecture](docs/structure.png)
+
+
+
