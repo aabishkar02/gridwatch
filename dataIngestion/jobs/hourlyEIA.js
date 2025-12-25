@@ -50,7 +50,7 @@ const runHourlyEIA = async () => {
       const doc = {
         region: r.respondent,
         timestamp: new Date(r.period + ":00Z"),
-        demandMW: r.value,
+        demand: r.value,
         source: "EIA"
       };
 

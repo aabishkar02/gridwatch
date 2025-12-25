@@ -1,0 +1,21 @@
+services:
+  ingestion:
+    build: ./dataIngestion
+    env_file: .env
+    restart: unless-stopped
+
+  forecast:
+    build: ./forecastService
+    env_file: .env
+    depends_on:
+      - ingestion
+    restart: unless-stopped
+
+  backend:
+    build: ./backend
+    env_file: .env
+    ports:
+      - "4000:4000"
+    depends_on:
+      - ingestion
+    restart: unless-stopped
