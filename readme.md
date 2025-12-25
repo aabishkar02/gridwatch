@@ -8,4 +8,5 @@
 
 
 ### Our Project Structure:
-    ![GridWatch Architecture](docs/structure.png)
+
+![GridWatch Architecture](docs/structure.png)
